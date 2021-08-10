@@ -1,19 +1,13 @@
-.page {
-  width: 750px;
-  padding: 0 67px;
-}
-
-@media screen and (min-width: 1000px) {
-  .page {
-    width: 1440px;
-  }
-}
 body {
   background: palegreen;
   font-family: "Open Sans", sans-serif;
   background: #674baf url(../images/bg-mobile.svg) 0 0 no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -24,6 +18,7 @@ h1 {
 
 .page {
   text-align: center;
+  max-width: 750px;
 }
 
 .header {
@@ -61,6 +56,7 @@ h1 {
   border-radius: 100px;
   display: inline-block;
   color: #674baf;
+  box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -76,18 +72,22 @@ h1 {
   border-radius: 100px;
   color: white;
 }
-.footer__link:last-of-type {
-  margin-right: 1rem;
+.footer__link:not(:last-of-type) {
+  margin-right: 2rem;
 }
 .footer__link i {
   vertical-align: middle;
   line-height: 3.5rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1280px) {
   body {
     background: #674baf url(../images/bg-desktop.svg) 0 0 no-repeat;
     background-size: cover;
+  }
+
+  .page {
+    max-width: 1310px;
   }
 
   .header {
@@ -111,7 +111,7 @@ h1 {
 
   .text {
     text-align: left;
-    margin: 3rem 0 0 3.1rem;
+    margin: 3rem 0 0 3.2rem;
   }
 
   .text__title {
@@ -136,7 +136,7 @@ h1 {
 
   .footer {
     text-align: right;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 1rem;
   }
 
   .footer__link {
@@ -145,7 +145,7 @@ h1 {
     height: 2.5rem;
   }
   .footer__link:not(:last-of-type) {
-    margin-right: 0.6rem;
+    margin-right: 0.7rem;
   }
   .footer__link i {
     font-size: 1.2rem;

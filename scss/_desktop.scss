@@ -5,6 +5,10 @@
     background: $violet url(../images/bg-desktop.svg) 0 0 no-repeat;
     background-size: cover;
   }
+
+  .page {
+    max-width: 1310px;
+  }
   .header {
     padding: 3.4rem 0;
   }
@@ -25,9 +29,8 @@
   }
 
   .text {
-    // flex: 0 0 40%;
     text-align: left;
-    margin: 3rem 0 0 3.1rem;
+    margin: 3rem 0 0 3.2rem;
   }
 
   .text__title {
@@ -51,7 +54,7 @@
 
   .footer {
     text-align: right;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 1rem;
   }
 
   .footer__link {
@@ -60,7 +63,7 @@
     height: 2.5rem;
 
     &:not(:last-of-type) {
-      margin-right: 0.6rem;
+      margin-right: 0.7rem;
     }
 
     i {
