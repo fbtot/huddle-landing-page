@@ -21,6 +21,7 @@ h1 {
 .page {
   text-align: center;
   max-width: 750px;
+  margin: 0 1rem;
 }
 
 .header {
@@ -58,6 +59,11 @@ h1 {
   display: inline-block;
   color: $violet;
   box-shadow: 0rem 0.3rem 1rem rgba(black, 0.5);
+
+  &:hover {
+    background-color: $soft-magenta;
+    color: white;
+  }
 }
 
 .footer {
@@ -75,6 +81,11 @@ h1 {
 
   &:not(:last-of-type) {
     margin-right: 2rem;
+  }
+
+  &:hover {
+    color: $soft-magenta;
+    border-color: $soft-magenta;
   }
 
   i {
