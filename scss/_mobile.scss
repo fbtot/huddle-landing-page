@@ -60,14 +60,14 @@ h1 {
 
 .footer__link {
   font-size: 1.7rem;
-  border: 2px solid white;
+  border: 1px solid white;
   display: inline-block;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 100px;
   color: white;
 
-  &:not(:last-of-type) {
+  &:last-of-type {
     margin-right: 1rem;
   }
 

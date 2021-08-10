@@ -69,14 +69,14 @@ h1 {
 
 .footer__link {
   font-size: 1.7rem;
-  border: 2px solid white;
+  border: 1px solid white;
   display: inline-block;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 100px;
   color: white;
 }
-.footer__link:not(:last-of-type) {
+.footer__link:last-of-type {
   margin-right: 1rem;
 }
 .footer__link i {
@@ -85,6 +85,11 @@ h1 {
 }
 
 @media screen and (min-width: 1000px) {
+  body {
+    background: #674baf url(../images/bg-desktop.svg) 0 0 no-repeat;
+    background-size: cover;
+  }
+
   .header {
     padding: 3.4rem 0;
   }
@@ -101,6 +106,7 @@ h1 {
   .img {
     flex: 0 0 55%;
     margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   .text {
@@ -115,14 +121,35 @@ h1 {
   }
 
   .text__content {
-    font-size: 1rem;
-    line-height: 1.7em;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+    line-height: 1.5em;
+    margin-right: 1rem;
   }
 
   .text__button {
+    text-align: center;
     font-size: 1.1rem;
-    width: auto;
-    padding: 1.2rem;
+    width: 12.5rem;
+    padding: 1.1rem;
+  }
+
+  .footer {
+    text-align: right;
+    padding: 1.5rem 0rem;
+  }
+
+  .footer__link {
+    text-align: center;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .footer__link:not(:last-of-type) {
+    margin-right: 0.6rem;
+  }
+  .footer__link i {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
 }
 
