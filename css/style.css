@@ -1,5 +1,82 @@
+.page {
+  width: 750px;
+  padding: 0 67px;
+}
+
 body {
   background: palegreen;
+  font-family: "Open Sans", sans-serif;
+  background: #674baf url(../images/bg-mobile.svg) 0 0 no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5em;
+}
+
+.page {
+  text-align: center;
+}
+
+.header {
+  padding: 4rem 0;
+}
+
+.header__logo {
+  display: block;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  padding: 0 0.5rem;
+  margin: 3.5rem 0 7.3rem;
+}
+
+.text__title {
+  margin-bottom: 0.6em;
+}
+
+.text__content {
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.text__button {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  padding: 1.2em;
+  width: 18em;
+  border-radius: 100px;
+  display: inline-block;
+  color: #674baf;
+}
+
+.footer {
+  padding: 8rem 0;
+}
+
+.footer__link {
+  font-size: 1.7rem;
+  border: 2px solid white;
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 100px;
+  color: white;
+}
+.footer__link:not(:last-of-type) {
+  margin-right: 1rem;
+}
+.footer__link i {
+  vertical-align: middle;
+  line-height: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
