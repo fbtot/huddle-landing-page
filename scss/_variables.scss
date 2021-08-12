@@ -7,3 +7,7 @@ $headings-font: "Poppins", sans-serif;
 $body-font: "Open Sans", sans-serif;
 
 $desktop-width: 1280px;
+
+%transition {
+  transition: 0.2s ease-in-out;
+}

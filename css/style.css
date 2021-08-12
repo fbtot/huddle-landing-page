@@ -1,3 +1,7 @@
+.text__button, .footer__link {
+  transition: 0.2s ease-in-out;
+}
+
 body {
   background: palegreen;
   font-family: "Open Sans", sans-serif;
@@ -89,6 +93,11 @@ h1 {
   line-height: 3.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 1280px) {
   body {
     background: #674baf url(../images/bg-desktop.svg) 0 0 no-repeat;

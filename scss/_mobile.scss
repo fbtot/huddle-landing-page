@@ -59,6 +59,7 @@ h1 {
   display: inline-block;
   color: $violet;
   box-shadow: 0rem 0.3rem 1rem rgba(black, 0.5);
+  @extend %transition;
 
   &:hover {
     background-color: $soft-magenta;
@@ -78,6 +79,7 @@ h1 {
   height: 3.5rem;
   border-radius: 100px;
   color: white;
+  @extend %transition;
 
   &:not(:last-of-type) {
     margin-right: 2rem;
@@ -91,5 +93,11 @@ h1 {
   i {
     vertical-align: middle;
     line-height: 3.5rem;
+  }
+}
+
+@media screen and(max-width: 600px) {
+  html {
+    font-size: 12px;
   }
 }
